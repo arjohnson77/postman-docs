@@ -136,6 +136,8 @@ OpenSSL is already installed for macOS and typically installed for Linux. For Wi
 1. Open **Command Prompt** and run **openssl version** to confirm the installation was successful.
 
     ![download OpenSSL installer](https://assets.postman.com/postman-docs/windows-check-openssl-version.jpg)
+    
+1. **Exit** and restart Postman to generate the certificates automatically.
 
 ## Capture HTTPS traffic with Postman's built-in proxy
 
@@ -160,6 +162,7 @@ After these steps, you will be able to capture HTTPS Requests with the Postman p
 
 1. From Windows File Explorer, navigate to **%APPDATA%\Postman\proxy**. Typically, it will be located at: **C:\Users\<user>\AppData\Roaming\Postman\proxy**
     [![Navigate to crt file](https://assets.postman.com/postman-docs/windows-crt-file-aa.jpeg)](https://assets.postman.com/postman-docs/windows-crt-file-aa.jpeg)
+    (If certificates are missing, close and reopen Postman)
 1. Right-click on the **postman-proxy-ca.crt** file and select **Install Certificate**.
     [![Select crt file](https://assets.postman.com/postman-docs/windows-install-crt-aa.jpeg)](https://assets.postman.com/postman-docs/windows-install-crt-aa.jpeg)
 1. Select the Local Machine and proceed. This will need Administrator permissions.
